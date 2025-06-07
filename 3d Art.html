@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+<style>
+    body{padding: 0;
+    margin: 0;
+    font-family:  'Times New Roman', Times, serif;}
+
+#header {position: fixed;
+top: 0px; 
+left: 0px;
+z-index: 500;
+width: 100%;
+height: 80px;
+background-color: rgb(247, 221, 212);
+font-size: 50px;
+text-align: center;
+text-shadow: 2px;
+color: rgb(255, 255, 255);
+} 
+
+
+#tabs-top{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(247, 221, 212);
+    text-align: center;
+}
+
+#tabs-top a {text-decoration: none;
+text-align: center;
+color: #000;
+}
+
+button{
+    background-color: rgb(247, 131, 202); 
+    border-radius: 10px; 
+    width: fit-content; 
+    border-width: 0.5px;
+    padding: 5px;
+    text-align: center;
+}
+ 
+
+ #main{
+    margin-top: 119px;
+    background-image: url('images/bigHome.png');
+    background-repeat: repeat-y;   
+}
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+a.info-box{
+    text-decoration: none;
+    background: rgba(255, 171, 213, 0.432);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px;
+}
+
+.info-box img{ 
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box h3{
+    padding: 15px;
+    margin-bottom: 0;
+    width: 90%;
+    color: #f8a3cb;
+}
+
+.info-box img.right{
+    float: right;
+    margin-top: 10px;
+    height: 40pxS;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: #f8a3cb;
+
+}
+
+#footer a{
+    float: left;
+    display: block;
+    width: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: nonne;
+    padding-top: 12px;
+
+
+}
+
+</style>
+</head>
+<body>
+   <div id="header">My Portfolio</div>
+
+   <div id="tabs-top">
+    <button><a href="#">3D Art</a></button>
+    <button><a href="#">Crochet</a></button>
+    <button><a href="#">Video editing</a></button>
+   </div>
+
+
+   <div id="main">
+    <div id="content"> 
+        <a class="info-box" href="#">
+             <img class="right" src="images/arrowForward.png" />
+             <img src="images/folder.png" />
+             <h3>Animations</h3>
+        </a>
+     </div>     
+   </div>
+
+   <div id="footer">
+    <a href="#">ABOUT</a>
+    <a href="#">CONTACT ME</a>
+   </div>
+</body>
+</html>
